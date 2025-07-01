@@ -3,7 +3,7 @@ service: express-lambda
 provider:
   name: aws
   runtime: nodejs18.x
-  region: ${{ secrets.AWS_REGION }}
+  region: ${env:AWS_REGION}
 
 functions:
   app:
