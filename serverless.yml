@@ -2,8 +2,8 @@ service: express-lambda
 
 provider:
   name: aws
-  runtime: nodejs22.x
-  region: us-east-1
+  runtime: nodejs18.x
+  region: ${{ secrets.AWS_REGION }}
 
 functions:
   app:
